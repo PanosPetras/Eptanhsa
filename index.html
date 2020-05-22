@@ -1,0 +1,167 @@
+<HTML>
+	<HEAD>
+		<TITLE>Επτάνησα</TITLE>
+		<STYLE>
+			body {
+					background-color: rgb(0, 102, 181);
+				}
+		</STYLE>
+	</HEAD>
+	<BODY>
+		<h1>Τα νησιά Του Ιονίου πελάγους</h1>
+			<img src="greece.png">
+		<P>Επιλέξτε το όνομα που αντιστοιχεί σε ένα κάθε νησί του Ιονίου πελάγους</P>
+		<P>1.
+		<select name="Island1" id="Island1">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt1"></b>
+		<P>2.
+		<select name="Island2" id="Island2">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt2"></b>
+		<P>3.
+		<select name="Island3" id="Island3">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt3"></b>
+		<P>4.
+		<select name="Island4" id="Island4">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt4"></b>
+		<P>5.
+		<select name="Island5" id="Island5">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt5"></b>
+		<P>6.
+		<select name="Island6" id="Island6">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt6"></b>
+		<P>7.
+		<select name="Island7" id="Island7">
+			<option value="Zakynthos">Ζάκυνθος</option>
+			<option value="Corfu">Κέρκυρα</option>
+			<option value="Ithaca">Ιθάκη</option>
+			<option value="Paxoi">Παξοί</option>
+			<option value="Kefalonia">Κεφαλονιά</option>
+			<option value="Kuthira">Κύθηρα</option>
+			<option value="Leukada">Λευκάδα</option>
+		</select>
+		<b id="opt7"></b>
+		<P><button onclick="myFunction()">Έλεγχος</button></P>
+		<b id="statictext" style="font-size:40px"></b><b id="score" style="font-size:40px"></b>
+		<P id="comment" style="font-size:40px"></P>
+		<script>
+			function myFunction() {
+				var score = 0;
+				if(document.getElementById("Island1").value === "Corfu"){
+					document.getElementById("opt1").innerHTML = "Κέρκυρα";
+					document.getElementById("opt1").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt1").innerHTML = "Κέρκυρα";
+					document.getElementById("opt1").style.color = "red";
+					}		
+				
+				if(document.getElementById("Island2").value === "Paxoi"){
+					document.getElementById("opt2").innerHTML = "Παξοί";
+					document.getElementById("opt2").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt2").innerHTML = "Παξοί";
+					document.getElementById("opt2").style.color = "red";
+					}	
+				if(document.getElementById("Island3").value === "Leukada"){
+					document.getElementById("opt3").innerHTML = "Λευκάδα";
+					document.getElementById("opt3").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt3").innerHTML = "Λευκάδα";
+					document.getElementById("opt3").style.color = "red";
+					}
+				if(document.getElementById("Island4").value === "Kefalonia"){
+					document.getElementById("opt4").innerHTML = "Κεφαλονιά";
+					document.getElementById("opt4").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt4").innerHTML = "Κεφαλονιά";
+					document.getElementById("opt4").style.color = "red";
+					}	
+				if(document.getElementById("Island5").value === "Ithaca"){
+					document.getElementById("opt5").innerHTML = "Ιθάκη";
+					document.getElementById("opt5").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt5").innerHTML = "Ιθάκη";
+					document.getElementById("opt5").style.color = "red";
+					}	
+				if(document.getElementById("Island6").value === "Zakynthos"){
+					document.getElementById("opt6").innerHTML = "Ζάκυνθος";
+					document.getElementById("opt6").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt6").innerHTML = "Ζάκυνθος";
+					document.getElementById("opt6").style.color = "red";
+					}										
+				if(document.getElementById("Island7").value === "Kuthira"){
+					document.getElementById("opt7").innerHTML = "Κύθηρα";
+					document.getElementById("opt7").style.color = "green";
+					score += 1;
+					} else {
+					document.getElementById("opt7").innerHTML = "Κύθηρα";
+					document.getElementById("opt7").style.color = "red";
+				}
+				document.getElementById("score").innerHTML = score;
+				document.getElementById("statictext").innerHTML = "Το σκορ σου είναι:";
+				if(score > 5) {
+				document.getElementById("comment").innerHTML = "Μπράβο!!";
+				}
+				if(score === 5){
+				document.getElementById("comment").innerHTML = "Μπορείς και καλύτερα..";
+				}
+				if(score < 5){
+				document.getElementById("comment").innerHTML = "Θα ήθελες να ξαναπροσπαθήσεις;;";
+				}
+			}
+		</script>
+</HTML>
